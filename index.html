@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111111">
+    <meta name="description" content="Scooters eléctricos, repuestos multimarca y servicio técnico en Bogotá. Compra con el respaldo de ingenieros, taller especializado y laboratorio de baterías Rolder's.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rolder's EcoRide | Muévete con respaldo">
+    <meta property="og:description" content="Scooters eléctricos, repuestos multimarca, ingeniería y servicio posventa en Bogotá.">
+    <title>Rolder's EcoRide | Scooters eléctricos con respaldo real</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="announcement">
+        <span>INGENIERÍA, MOVILIDAD ELÉCTRICA Y RESPALDO POSVENTA</span>
+        <span class="announcement-location">BOGOTÁ · ENVÍOS A COLOMBIA</span>
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="#inicio" aria-label="Rolder's, inicio">
+                <img src="assets/img/catalogo-rolders/Logo/rolders-logo-horizontal.png" alt="Rolder's" width="458" height="138">
+            </a>
+            <nav class="desktop-nav" aria-label="Navegación principal">
+                <a href="#scooters" data-catalog-link="all">Tienda</a>
+                <a href="#repuestos" data-catalog-link="repuestos">Repuestos</a>
+                <a href="#ingenieria">Ingeniería</a>
+                <a href="#taller">Taller y posventa</a>
+            </nav>
+            <div class="header-actions">
+                <a class="header-contact" href="https://wa.me/573228193376" data-whatsapp="commercial" data-message="Hola, quiero asesoría para comprar un scooter o repuesto.">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>Habla con un asesor</span>
+                </a>
+                <button class="cart-trigger" id="cart-trigger" type="button" aria-label="Abrir carrito">
+                    <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                    <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+                </button>
+                <button class="menu-trigger" id="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil" hidden>
+            <a href="#scooters" data-catalog-link="all">Tienda</a>
+            <a href="#repuestos" data-catalog-link="repuestos">Repuestos</a>
+            <a href="#ingenieria">Ingeniería</a>
+            <a href="#taller">Taller y posventa</a>
+            <a href="https://wa.me/573228193376" data-whatsapp="commercial" data-message="Hola, quiero asesoría para comprar un scooter o repuesto.">Asesoría comercial por WhatsApp</a>
+            <a href="https://wa.me/573106777206" data-whatsapp="workshop" data-message="Hola, quiero información sobre el taller multimarca Rolder's.">Contactar al taller por WhatsApp</a>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section class="hero" id="inicio">
+            <div class="hero-layout">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span></span> MOVILIDAD ELÉCTRICA · BOGOTÁ</p>
+                    <h1>Más que moverte.<br><span>Muévete con respaldo.</span></h1>
+                    <p class="hero-description">Scooters eléctricos y repuestos con el respaldo de nuestro equipo de ingeniería, taller multimarca y laboratorio de baterías.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" id="hero-view-product" href="https://wa.me/573228193376" data-whatsapp="commercial" data-message="Hola, quiero consultar las promociones Rolder's, sus precios y disponibilidad.">Consulta esta promoción <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                        <a class="button button-quiet" href="#ingenieria">Conoce el respaldo</a>
+                    </div>
+                    <div class="hero-proof">
+                        <span><i class="fa-solid fa-microchip" aria-hidden="true"></i> Ingeniería propia</span>
+                        <span><i class="fa-solid fa-battery-half" aria-hidden="true"></i> Laboratorio de baterías</span>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-stage" id="hero-carousel" role="region" aria-roledescription="carrusel" aria-label="Portadas y promociones Rolder's">
+                        <div class="hero-product-image-wrap" id="hero-product-image-wrap">
+                            <img id="hero-product-image" src="assets/img/catalogo-rolders/Portadas/3.png" alt="Portada promocional Rolder's Orbix" width="1080" height="1080" fetchpriority="high">
+                        </div>
+                        <div class="hero-carousel-controls">
+                            <button class="hero-arrow" id="hero-previous" type="button" aria-label="Portada anterior"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+                            <div class="hero-carousel-pagination" role="group" aria-label="Elegir portada promocional">
+                                <button class="hero-dot is-active" type="button" data-hero-slide="0" aria-label="Mostrar portada Orbix" aria-pressed="true"></button>
+                                <button class="hero-dot" type="button" data-hero-slide="1" aria-label="Mostrar portada Rocket Roll 800" aria-pressed="false"></button>
+                                <button class="hero-dot" type="button" data-hero-slide="2" aria-label="Mostrar portada Rocket Roll 1600" aria-pressed="false"></button>
+                                <button class="hero-dot" type="button" data-hero-slide="3" aria-label="Mostrar portada StarGlide 600" aria-pressed="false"></button>
+                                <button class="hero-dot" type="button" data-hero-slide="4" aria-label="Mostrar portada EcoRide PRO" aria-pressed="false"></button>
+                            </div>
+                            <span class="hero-carousel-count" id="hero-carousel-count">01 / 05</span>
+                            <button class="hero-arrow" id="hero-next" type="button" aria-label="Siguiente portada"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                        <p class="hero-promo-notice"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Consulta con el asesor la vigencia, el precio y la disponibilidad.</p>
+                        <div class="hero-progress-track" aria-hidden="true"><span id="hero-progress"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-bottom"><span>INGENIERÍA LOCAL · SERVICIO MULTIMARCA · RESPALDO REAL</span><a href="#scooters">EXPLORAR LA COLECCIÓN <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a></div>
+        </section>
+
+        <section class="trust-strip" aria-label="Diferenciales de Rolder's">
+            <div><i class="fa-solid fa-compass-drafting" aria-hidden="true"></i><span>Equipo de ingeniería</span></div>
+            <div><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i><span>Taller multimarca</span></div>
+            <div><i class="fa-solid fa-microchip" aria-hidden="true"></i><span>Laboratorio de baterías</span></div>
+            <div><i class="fa-solid fa-headset" aria-hidden="true"></i><span>Respaldo posventa</span></div>
+        </section>
+
+        <section class="catalog-section section" id="scooters">
+            <div class="section-shell">
+                <div class="section-heading catalog-heading">
+                    <div>
+                        <p class="eyebrow">ELIGE CON CRITERIO</p>
+                        <h2>Encuentra el modelo<br><span>que va contigo.</span></h2>
+                    </div>
+                    <p>Elige tu scooter o repuesto, agrégalo al carrito y envíanos tu pedido. Confirmaremos contigo precio, disponibilidad y entrega por WhatsApp.</p>
+                </div>
+                <div class="catalog-switch" role="group" aria-label="Filtrar catálogo">
+                    <button class="catalog-tab is-active" type="button" data-catalog-tab="all" aria-pressed="true">Todo el catálogo</button>
+                    <button class="catalog-tab" type="button" data-catalog-tab="patinetes" aria-pressed="false">Scooters</button>
+                    <button class="catalog-tab" id="repuestos" type="button" data-catalog-tab="repuestos" aria-pressed="false">Repuestos multimarca</button>
+                </div>
+                <form class="product-filters" id="part-finder-form">
+                    <label class="filter-field">
+                        <span>MARCA</span>
+                        <select id="select-brand" aria-label="Filtrar por marca">
+                            <option value="">Todas las marcas</option>
+                            <option value="rolders">Rolder's</option>
+                            <option value="xiaomi">Xiaomi</option>
+                            <option value="zwheel">ZWheel</option>
+                            <option value="minca">Minca</option>
+                            <option value="segway">Segway / Ninebot</option>
+                            <option value="scooterco">Scooter Colombia</option>
+                        </select>
+                    </label>
+                    <label class="filter-field">
+                        <span>TIPO DE PRODUCTO</span>
+                        <select id="select-category" aria-label="Filtrar por categoría">
+                            <option value="">Todas las categorías</option>
+                            <option value="patinetes">Scooters</option>
+                            <option value="frenos">Frenos</option>
+                            <option value="llantas">Llantas y neumáticos</option>
+                            <option value="baterias">Baterías y cargadores</option>
+                            <option value="electrica">Eléctrica y motor</option>
+                            <option value="suspension">Suspensión y chasis</option>
+                        </select>
+                    </label>
+                    <label class="filter-field filter-search">
+                        <span>NOMBRE, MODELO O REFERENCIA</span>
+                        <input id="input-keyword" type="search" placeholder="Ej. EcoRide PRO, llanta 10…”" autocomplete="off">
+                    </label>
+                    <button class="filter-submit" id="btn-search-parts" type="submit" aria-label="Buscar en catálogo"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><span>Buscar</span></button>
+                </form>
+                <p class="filter-status" id="filter-status" role="status" aria-live="polite"></p>
+                <div class="product-grid" id="product-grid" aria-live="polite"></div>
+                <p class="catalog-disclaimer">Los precios, la disponibilidad, la compatibilidad final, el pago y la entrega se confirman al recibir tu solicitud por WhatsApp. Enviar el carrito no confirma una compra.</p>
+                <div class="catalog-help">
+                    <span>¿No encuentras la pieza o no sabes si es compatible?</span>
+                    <a href="https://wa.me/573228193376" data-whatsapp="commercial" data-message="Hola, necesito ayuda para identificar un repuesto. Mi scooter es: ">Consúltalo con un asesor <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="#taller">¿Necesitas servicio técnico? <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="engineering-section section" id="ingenieria">
+            <div class="section-shell engineering-layout">
+                <div class="engineering-copy">
+                    <p class="eyebrow">NO ADIVINAMOS. DIAGNOSTICAMOS.</p>
+                    <h2>La energía también necesita <span>ingeniería.</span></h2>
+                    <p>En nuestro laboratorio especializado evaluamos baterías y sistemas eléctricos para orientar el diagnóstico y el siguiente paso con criterio técnico.</p>
+                    <a class="text-link" href="#taller">Solicitar diagnóstico de batería <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    <div class="engineering-points">
+                        <div><span>01</span><p>Revisión del estado de la batería</p></div>
+                        <div><span>02</span><p>Diagnóstico técnico del sistema eléctrico</p></div>
+                        <div><span>03</span><p>Orientación de servicio y mantenimiento</p></div>
+                    </div>
+                </div>
+                <div class="lab-visual" role="img" aria-label="Ilustración técnica de una batería en evaluación">
+                    <div class="lab-topline"><span>ROLDER'S / LAB</span><span><i></i> CENTRO TÉCNICO</span></div>
+                    <div class="lab-battery" aria-hidden="true"><span class="battery-terminal"></span><span class="battery-cell"></span><span class="battery-cell"></span><span class="battery-cell"></span><span class="battery-cell"></span><span class="battery-cell"></span><span class="battery-cell"></span><i class="fa-solid fa-bolt"></i></div>
+                    <div class="lab-scanline" aria-hidden="true"></div>
+                    <div class="lab-bottomline"><span>DIAGNÓSTICO</span><strong>Con datos. Con respaldo.</strong><span>R / E</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section section" id="taller">
+            <div class="section-shell">
+                <div class="section-heading service-heading">
+                    <div><p class="eyebrow">EL RESPALDO NO TERMINA EN LA COMPRA</p><h2>Tu scooter, en manos<br><span>de especialistas.</span></h2></div>
+                    <p>Atendemos scooters Rolder's y otras marcas. Cuéntanos qué necesita tu vehículo y solicita una cita; nuestro equipo te confirmará disponibilidad por WhatsApp.</p>
+                </div>
+                <div class="service-layout">
+                    <div class="service-form-card">
+                        <div class="form-heading"><span class="form-icon"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span><div><h3>Solicita una cita</h3><p>El taller coordinará contigo la fecha y el horario.</p></div></div>
+                        <form class="service-form" id="tech-service-form">
+                            <label class="form-field"><span>Tu nombre</span><input id="service-name" name="name" type="text" autocomplete="name" placeholder="Nombre completo" required maxlength="80"></label>
+                            <div class="form-row">
+                                <label class="form-field"><span>Marca y modelo</span><input id="service-model" name="model" type="text" placeholder="Ej. Minca 500W" required maxlength="80"></label>
+                                <label class="form-field"><span>¿Qué necesitas?</span><select id="service-type" name="service"><option value="Mantenimiento preventivo">Mantenimiento preventivo</option><option value="Diagnóstico de batería">Diagnóstico de batería</option><option value="Revisión eléctrica o de motor">Revisión eléctrica o de motor</option><option value="Frenos, llantas o suspensión">Frenos, llantas o suspensión</option><option value="Instalación de repuesto">Instalación de repuesto</option><option value="Otro servicio">Otro servicio</option></select></label>
+                            </div>
+                            <div class="form-row">
+                                <label class="form-field"><span>Fecha que prefieres</span><input id="service-date" name="date" type="date"></label>
+                                <label class="form-field"><span>Horario preferido</span><select id="service-time" name="time"><option value="">Por coordinar</option><option value="Mañana">Mañana</option><option value="Tarde">Tarde</option></select></label>
+                            </div>
+                            <label class="form-field"><span>Cuéntanos un poco más <small>(opcional)</small></span><textarea id="service-notes" name="notes" rows="3" placeholder="Describe el problema o servicio que necesitas." maxlength="500"></textarea></label>
+                            <button class="button button-primary form-submit" type="submit">Solicitar cita por WhatsApp <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></button>
+                            <p class="form-disclaimer">La fecha queda sujeta a confirmación del equipo del taller.</p>
+                        </form>
+                    </div>
+                    <aside class="service-info">
+                        <div class="workshop-illustration" aria-label="Servicios del taller multimarca Rolder's">
+                            <span class="workshop-overline">ROLDER'S / CENTRO TÉCNICO</span>
+                            <strong>Movilidad eléctrica.<br><span>Resuelta por especialistas.</span></strong>
+                            <div class="workshop-capabilities"><span><i class="fa-solid fa-bolt" aria-hidden="true"></i> Electrónica</span><span><i class="fa-solid fa-battery-half" aria-hidden="true"></i> Baterías</span><span><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Mecánica multimarca</span></div>
+                        </div>
+                        <div class="location-card">
+                            <p class="eyebrow">VISÍTANOS EN BOGOTÁ</p>
+                            <h3>Centro de servicio Rolder's</h3>
+                            <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Calle 139 # 101-18, Suba<br>Bogotá, Colombia</span></p>
+                            <p><i class="fa-regular fa-clock" aria-hidden="true"></i><span>Lunes a sábado<br>9:00 a. m. – 6:00 p. m.</span></p>
+                            <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Calle+139+101-18+Suba+Bogota" target="_blank" rel="noopener noreferrer">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                            <a class="location-contact" href="https://wa.me/573106777206" data-whatsapp="workshop" data-message="Hola, quiero consultar disponibilidad del taller Rolder's.">Contactar directamente al taller <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="promise-section section">
+            <div class="section-shell promise-layout">
+                <div><p class="eyebrow">CLARIDAD ANTES DE COMPRAR</p><h2>La confianza también<br>se construye <span>con información.</span></h2></div>
+                <div class="faq-list">
+                    <details><summary>¿Atienden scooters de otras marcas?<i class="fa-solid fa-plus" aria-hidden="true"></i></summary><p>Sí. Somos un taller multimarca. Escríbenos con la marca, modelo y el problema para validar cómo podemos ayudarte.</p></details>
+                    <details><summary>¿Puedo revisar mi batería en el laboratorio?<i class="fa-solid fa-plus" aria-hidden="true"></i></summary><p>Puedes solicitar un diagnóstico. El equipo del taller confirmará el servicio, la disponibilidad y los pasos para llevar tu scooter.</p></details>
+                    <details><summary>¿Cómo confirmo que un repuesto le sirve a mi scooter?<i class="fa-solid fa-plus" aria-hidden="true"></i></summary><p>Comparte con el asesor la marca, el modelo exacto y una foto de la pieza o del conector. La compatibilidad debe confirmarse antes de comprar.</p></details>
+                    <details id="faq"><summary>¿Dónde consulto la garantía y el servicio posventa?<i class="fa-solid fa-plus" aria-hidden="true"></i></summary><p>Escríbenos para conocer las condiciones vigentes de garantía y el acompañamiento posventa aplicable a tu modelo.</p></details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="store-dialog cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+        <div class="dialog-heading">
+            <div><p class="eyebrow">TU SELECCIÓN</p><h2 id="cart-title">Carrito de compra</h2></div>
+            <button class="dialog-close" type="button" data-close-dialog="cart-dialog" aria-label="Cerrar carrito"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        </div>
+        <p class="cart-intro">Añade los scooters y repuestos que te interesan. Antes de confirmar, validaremos contigo el precio, la disponibilidad y el envío.</p>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-empty" id="cart-empty" hidden>
+            <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+            <p>Tu carrito está vacío.</p>
+            <button class="button button-primary" type="button" data-close-dialog="cart-dialog">Explorar productos</button>
+        </div>
+        <div class="cart-checkout">
+            <label class="form-field"><span>TU NOMBRE <small>(OPCIONAL)</small></span><input id="checkout-name" type="text" autocomplete="name" maxlength="80" placeholder="Nombre"></label>
+            <label class="form-field"><span>CIUDAD DE ENTREGA <small>(OPCIONAL)</small></span><input id="checkout-city" type="text" autocomplete="address-level2" maxlength="80" placeholder="Ciudad"></label>
+            <p class="cart-disclaimer">Este carrito prepara tu solicitud; no procesa pagos ni reserva inventario. El asesor confirmará precio, stock, transporte y medio de pago.</p>
+            <button class="button button-primary cart-submit" id="send-order" type="button"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Enviar pedido al asesor</button>
+        </div>
+    </dialog>
+
+    <dialog class="store-dialog gallery-dialog" id="gallery-dialog" aria-labelledby="gallery-title">
+        <div class="dialog-heading">
+            <div><p class="eyebrow" id="gallery-eyebrow">FICHA DEL PRODUCTO</p><h2 id="gallery-title"></h2></div>
+            <button class="dialog-close" type="button" data-close-dialog="gallery-dialog" aria-label="Cerrar galería"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        </div>
+        <div class="product-detail-layout">
+            <div class="gallery-panel">
+                <div class="gallery-viewer">
+                    <button class="gallery-arrow" id="gallery-previous" type="button" aria-label="Foto anterior"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+                    <img id="gallery-image" src="" alt="">
+                    <button class="gallery-arrow" id="gallery-next" type="button" aria-label="Foto siguiente"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                </div>
+                <p class="gallery-count" id="gallery-count" aria-live="polite"></p>
+            </div>
+            <section class="product-detail-copy" aria-labelledby="gallery-title">
+                <p class="product-detail-brand" id="gallery-brand"></p>
+                <p class="product-detail-description" id="gallery-description"></p>
+                <h3 id="gallery-features-heading">Lo que debes saber</h3>
+                <ul class="product-detail-features" id="gallery-features"></ul>
+                <p class="product-detail-note" id="gallery-note"></p>
+                <button class="button button-primary gallery-add" id="gallery-add" type="button">Agregar al carrito</button>
+            </section>
+        </div>
+    </dialog>
+
+    <div class="contact-dock" aria-label="Contactar a Rolder's">
+        <a href="https://wa.me/573228193376" data-whatsapp="commercial" data-message="Hola, quiero asesoría comercial sobre scooters o repuestos." aria-label="WhatsApp comercial">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>Comercial</span>
+        </a>
+        <a href="https://wa.me/573106777206" data-whatsapp="workshop" data-message="Hola, quiero comunicarme con el taller multimarca." aria-label="WhatsApp taller">
+            <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i><span>Taller</span>
+        </a>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <a class="brand" href="#inicio" aria-label="Rolder's, inicio"><img src="assets/img/catalogo-rolders/Logo/rolders-logo-horizontal.png" alt="Rolder's" width="458" height="138"></a>
+            <p>Movilidad eléctrica respaldada por conocimiento técnico. Scooters, repuestos y servicio multimarca en Bogotá.</p>
+            <div class="footer-links"><a href="#scooters">Tienda</a><a href="#taller">Taller y posventa</a><a href="#faq">Garantía y preguntas</a><a href="#inicio">Volver al inicio</a></div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="current-year">2026</span> Rolder's EcoRide. Todos los derechos reservados.</span><span>Bogotá, Colombia · Envíos a Colombia</span></div>
+    </footer>
+
+    <script src="js/site-config.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

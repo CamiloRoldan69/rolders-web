@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" fill="none">
+  <rect width="600" height="420" fill="#191817"/>
+  <path d="M0 330h600M300 0v420" stroke="#fff" stroke-opacity=".045"/>
+  <g transform="translate(300 197)">
+    <circle r="116" stroke="#292827" stroke-width="37"/>
+    <circle r="116" stroke="#AAA39D" stroke-opacity=".72" stroke-width="3"/>
+    <circle r="78" stroke="#F04A51" stroke-opacity=".8" stroke-width="3" stroke-dasharray="10 10"/>
+    <circle r="36" fill="#272523" stroke="#77716C" stroke-width="5"/>
+    <circle r="11" fill="#F04A51"/>
+    <path d="M0-139v20m0 264v-20m139-125h-20m-238 0h-20M98-98l-15 15m-166 166-15 15m196 0-15-15m-166-166-15-15" stroke="#C6BFBA" stroke-width="7" stroke-linecap="round"/>
+    <path d="M-96-67l19 14m154 92 19 14M-96 67l19-14m154-92 19-14" stroke="#F04A51" stroke-opacity=".8" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="32" y="382" fill="#F4F0ED" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">RUEDA · LLANTA · NEUMÁTICO</text>
+</svg>

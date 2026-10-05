@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" fill="none">
+  <rect width="600" height="420" fill="#191817"/>
+  <path d="M0 330h600M300 0v420" stroke="#fff" stroke-opacity=".045"/>
+  <g transform="translate(140 100) rotate(-12 160 100)">
+    <path d="M43 35c0-13 11-24 24-24h192c13 0 24 11 24 24v122H43V35Z" fill="#34312F" stroke="#AAA39D" stroke-width="5"/>
+    <path d="M66 55h194v81H66z" fill="#84252A" stroke="#EC464D" stroke-width="4"/>
+    <path d="M66 55h194v15H66z" fill="#F1575D" fill-opacity=".65"/>
+    <circle cx="66" cy="156" r="11" fill="#191817" stroke="#AAA39D" stroke-width="5"/>
+    <circle cx="260" cy="156" r="11" fill="#191817" stroke="#AAA39D" stroke-width="5"/>
+    <path d="M93 83h137M93 103h105" stroke="#F57B7F" stroke-opacity=".8" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="32" y="382" fill="#F4F0ED" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">SISTEMA DE FRENOS</text>
+</svg>
